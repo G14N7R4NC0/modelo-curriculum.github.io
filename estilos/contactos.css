@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    /*
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    */
+}
+
+body{
+    background-color: black;
+    width: 1346px;
+    height: 600px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-container{
+    background-color:  #1f1f1f;
+    width: 70%;
+    height: 97%;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+}
+
+.menu{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.btn-menu{
+    float: left;
+    line-height: 80px;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    padding: 10px;
+    background-color: #1f1f1f;
+}
+
+.btn-menu label{
+    color: rgba(81, 255, 188, 0.863);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#btn-menu{
+    display: none;
+}
+
+.container-menu{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100%;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+
+.cont-menu nav{
+    transform: translateY(35%);
+    position: absolute;
+    bottom: 40%;
+}
+
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 31px;
+    color: rgba(81, 255, 188, 0.863);
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+    border-left: 5px solid rgba(81, 255, 188, 0.863);
+    background: rgba(81, 255, 188, 0.123);
+}
+
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+main{
+    display: flex;
+}
+
+.foto{
+    width: 340px;
+    height: 605px;
+    position: relative;
+    bottom: 10px;
+    background:linear-gradient(rgba(1, 5, 0, 0.062),rgba(0, 0, 0, 0.89)),
+    url(imagenes/foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    margin-left: 55px;
+}
+
+.info{
+    position: relative;
+}
+
+.flex-container{
+    width: 485px;
+    margin: 10px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.titulo h1{
+    font-size: 40px;
+    margin-left: 0px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid rgba(81, 255, 188, 0.863);
+}
+
+.contacto-container{
+    margin-top: 40px;
+}
+
+.contacto-container span{
+    color: #666666;
+}
+
+.contacto-container a{
+    margin: 10px;
+    color: rgba(81, 255, 188, 0.863);
+    text-decoration: none;
+}
+
+.btn-numero a{
+    width: 90px;
+    padding: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms ease;
+}
+
+.btn-numero a:hover{
+    color: #1f1f1f;
+    background-color: rgba(81, 255, 188, 0.863);
+}
+
+.redes a{
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.redes a:hover{
+    color: #1f1f1f;
+    background: rgba(81, 255, 188, 0.863);
+}
+
+.numero{
+    margin: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #66666636;
+}
+
+
+.email{
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #66666636;
+}
+
+.btn-email a{
+    width: 90px;
+    padding: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms ease;
+}
+
+.btn-email a:hover{
+    color: #1f1f1f;
+    background-color: rgba(81, 255, 188, 0.863);
+}
+
+.ubicacion{
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #66666636;
+}
+
+.redes-titulo{
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+.redes{
+    display: flex;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #66666636;
+}

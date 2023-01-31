@@ -8,29 +8,35 @@
     font-family: 'Fira Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
     */
+    line-height: 1.2;
 }
 
 body{
     background-color: black;
+    /*
     width: 1346px;
     height: 600px;
+    */
+    width: 100%;
+    height: 100%;
     color: #fff;
+    /*
     display: flex;
     justify-content: center;
     align-items: center;
+    */
 }
 
 .body-container{
     background-color:  #1f1f1f;
-    width: 70%;
-    height: 97%;
+    background:linear-gradient(rgba(67, 66, 66, 0.792),rgba(0, 0, 0, 0.554));
     border-radius: 5px;
     display: flex;
-    position: relative;
+    
 }
 
 .menu{
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: auto;
 }
@@ -42,7 +48,10 @@ body{
     left: 0;
     height: 100%;
     padding: 10px;
+    /*
     background-color: #1f1f1f;
+    */
+    background:linear-gradient(rgba(67, 66, 66, 0.792),rgba(0, 0, 0, 0.554));
 }
 
 .btn-menu label{
@@ -74,8 +83,11 @@ body{
 
 .cont-menu{
     width: 100%;
-    max-width: 250px;
+    max-width: 370px;
+    /*
     background: #1c1c1c;
+    */
+    background:linear-gradient(rgb(67, 66, 66),rgba(0, 0, 0, 0.679));
     height: 100%;
     position: relative;
     transition: all 500ms ease;
@@ -95,7 +107,7 @@ body{
 .cont-menu nav a{
     display: block;
     text-decoration: none;
-    padding: 20px;
+    padding: 30px 95px 30px 40px;
     color: rgba(81, 255, 188, 0.863);
     border-left: 5px solid transparent;
     transition: all 400ms ease;
@@ -117,14 +129,14 @@ body{
 
 main{
     display: flex;
+    height: auto;
 }
 
 .foto{
-    width: 340px;
-    height: 605px;
+    width: 470px;
+    height: 100%;
     position: relative;
-    bottom: 10px;
-    background:linear-gradient(rgba(1, 5, 0, 0.062),rgba(0, 0, 0, 0.89)),
+    background:linear-gradient( rgba(5, 5, 5, 0.108)20%,rgb(5, 5, 5)),
     url(imagenes/foto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -137,10 +149,10 @@ main{
 }
 
 .flex-container{
-    width: 485px;
-    margin: 10px;
-    margin-left: 50px;
-    position: absolute;
+    width: 680px;
+    display: block;
+    justify-content: space-between;
+    margin: 30px 0px 30px 100px;
 }
 
 .titulo h1{
@@ -149,11 +161,22 @@ main{
     border-bottom: 2px solid rgba(81, 255, 188, 0.863);
 }
 
+.experiencia-container{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
 h4{
+    font-size: 20px;
     color: rgba(81, 255, 188, 0.863);
 }
 
+h5{
+    font-size: 18px;
+}
+
 h6{
+    font-size: 13px;
     color: #666666;
 }
 
